@@ -1,0 +1,19 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+tr:nth-child(2),tr:nth-child(5){
+    background-color: #ffffcc;
+}
+th{
+    text-align: left;
+    background-color: #ccc;
+}
+th,td{
+    padding: 5px;
+    border: 1px solid #333;
+}
