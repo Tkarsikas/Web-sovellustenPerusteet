@@ -1,0 +1,110 @@
+:root{
+    --base-gap: 1rem;
+    --layout-fixed-height: 60px;
+    --foreground-color: #fff;
+    --header-bg-color: red;
+    --main-bg-color: blue;
+    --aside-bg-color: green;
+    --footer-bg-color: purple;
+}
+
+*,*::before, *::after{
+margin: 0;
+padding: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+}
+
+header{
+    background-color: var(--header-bg-color);
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: var(--base-gap);
+}
+
+main {
+    background-color: var(--main-bg-color);
+}
+
+aside{
+    background-color: var(--aside-bg-color);
+    container-type: inline-size;
+    container-name: sidebar;
+}
+
+footer{
+    background-color: var(--footer-bg-color);
+}
+
+div#container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 60px;
+    gap: var(--base-gap);
+    min-height: 100dvh;
+
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--base-gap) / 2);
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 0.75em;
+    padding: var(--base-gap);
+    max-width: 16rem;
+    max-height: 5rem;
+
+    .avatar {
+        width: 3rem;
+        height: 3rem;
+        background-color: #333;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+    }
+    .profile-info {
+        text-align: center;
+
+        .name {
+            font-weight: 700;
+        }
+
+        .status {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+header,main,aside,footer{
+    display: grid;
+    place-items: center;
+}
+
+@container sidebar (max-width: 403px){
+    .profile-card {
+        max-width: 10rem;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    section {
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    section {
+        grid-template-columns: 1.5fr 3fr;
+    }
+
+    main {order:2;}
+    aside {order : 1;}
+}

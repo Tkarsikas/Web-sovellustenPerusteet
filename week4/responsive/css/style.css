@@ -1,0 +1,76 @@
+:root{
+    --base-gap: 1rem;
+    --layout-fixed-height: 60px;
+    --foreground-color: #fff;
+    --header-bg-color: red;
+    --main-bg-color: blue;
+    --aside-bg-color: green;
+    --footer-bg-color: purple;
+}
+
+*,*::before, *::after{
+margin: 0;
+padding: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+}
+
+div#container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--base-gap);
+    min-height: 100dvh;
+    background-color: #ccc;
+}
+
+header{
+    background-color: var(--header-bg-color);
+    height: var(--layout-fixed-height);
+}
+
+section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--base-gap);
+}
+
+main {
+    background-color: var(--main-bg-color);
+    flex: 4;
+}
+
+aside{
+    background-color: var(--aside-bg-color);
+    flex: 1;
+}
+
+footer{
+    background-color: var(--footer-bg-color);
+    height: var(--layout-fixed-height);
+
+}
+header,main,aside,footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px){
+    section {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    section {
+        flex-direction: row-reverse;
+    }
+
+    main{
+        flex: 3;
+    }
+    aside{
+        flex: 2;
+    }
+}
