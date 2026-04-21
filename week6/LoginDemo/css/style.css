@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background-color: white;
+    width: 300px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input{
+    padding: 0.5rem;
+    border-style: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4a90e2;
+    color: white;
+}
+
+button#clearbtn{
+    background-color: #e24a4a;
+}

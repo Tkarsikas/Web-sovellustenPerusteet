@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 2em;
+
+}
+
+h1 {
+    margin-left: 0.75em;
+    margin-bottom: 1em;
+}
+
+button{
+    margin-left: 1em;
+
+}
+
+p{
+    margin: 1em 0 1em 1em;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 1em;
+
+}
+
+td {
+    border:  1px solid black;
+    padding: 0.25em 0.5em;
+    border-radius: 25px;
+    background-color: blanchedalmond;
+}
+
+button {
+    padding: 0.5em;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: cornflowerblue;
+}
