@@ -1,0 +1,41 @@
+.main {
+    width: stretch;
+    margin-bottom: 1em;
+}
+
+body {
+    container-type: inline-size;
+    margin: 0;
+    padding: 2rem;
+    background:
+        radial-gradient(circle at 12% 10%, #ffffff 0%, rgba(255, 255, 255, 0) 36%),
+        linear-gradient(135deg, #e8f2ff 0%, #f2f8ff 45%, #fff3e8 100%);
+    color: #111827;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-wrap: balance;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
+ Unicode', Geneva, Verdana, sans-serif
+
+}
+
+.secondary {
+    width: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@container (min-width: 40rem) {
+    .secondary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@container (min-width: 72rem) {
+    .secondary {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}

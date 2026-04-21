@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title">
+  <title id="title">Abstract profile portrait</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8e3bf"/>
+      <stop offset="100%" stop-color="#f0b35f"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="240" rx="28" fill="url(#bg)"/>
+  <circle cx="236" cy="66" r="32" fill="#fff4dd" opacity="0.75"/>
+  <circle cx="160" cy="98" r="52" fill="#d69972"/>
+  <path d="M96 214c14-43 48-67 64-67s50 24 64 67" fill="#2f6a73"/>
+  <path d="M117 85c8-29 35-47 63-47 31 0 58 18 66 46-18-13-40-19-67-17-27 1-47 8-62 18Z" fill="#2a2320"/>
+  <circle cx="141" cy="99" r="4" fill="#2a2320"/>
+  <circle cx="181" cy="99" r="4" fill="#2a2320"/>
+  <path d="M145 124c10 8 21 12 34 12s24-4 34-13" fill="none" stroke="#7a3f30" stroke-linecap="round" stroke-width="5"/>
+</svg>
