@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Suomi</title>
+</head>
+<body>
+    <main>
+        <h1>Suomen perustiedot</h1>
+        <p id="status">Haetaan tietoja...</p>
+        <section>
+            <input type="text" placeholder="Enter country name">
+            <button id="countrybtn">Enter</button>
+        </section>
+        <section id="info" hidden>
+            <img alt="Suomen lippu" />
+            <h2></h2>
+            <ul>
+                <li><span class="label">Pääkaupunki:</span><span id="capital"></span></li>
+                <li><span class="label">Väkiluku:</span><span id="population"></span></li>
+                <li><span class="label">Alue:</span><span id="region"></span></li>
+                <li><span class="label">Valuutta:</span><span id="currency"></span></li>
+            </ul>
+        </section>
+    </main>
+    <script src="./js/functions.js"></script>
+</body>
+</html>
